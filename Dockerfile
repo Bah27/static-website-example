@@ -3,6 +3,7 @@ FROM nginx:alpine
 #RUN apt-get update
 #RUN apt-get install nginx -y
 ADD static-website-example/ /var/www/html/
+RUN git clone 
 #RUN useradd -m myuser
 #USER myuser
 COPY nginx.conf /etc/nginx/conf.d/default.conf
